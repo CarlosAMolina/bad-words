@@ -1,0 +1,6 @@
+#!/bin/bash
+
+curl --request POST \
+'https://api.apilayer.com/bad_words?censor_character=*' \
+--header 'apikey: '$BAD_WORDS_API_KEY \
+--data-raw 'this is a shitty sentence'
